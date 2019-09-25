@@ -1,0 +1,6 @@
+#This program uses the input of your subtotal and input of what gradutity you want to pay and will give you the total amount.
+a = float(input("what is the subtotal?  "))
+b = float(input("what is gratuity you want to leave in decimal form?  "))
+c = (a*b)print("your gratuity is $",(a*b),"your total is $",(c+a))
+
+
