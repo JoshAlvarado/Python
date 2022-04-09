@@ -1,7 +1,7 @@
 class Solution:
     def minRemoveToMakeValid(self, s: str) -> str:
         
-        listS = list(s)
+        slist = list(s)
         stack = []
         for i, char in enumerate(s):
             if char == '(':
@@ -10,10 +10,7 @@ class Solution:
                 if stack:
                     stack.pop()
                 else:
-                    ListS[i] = ''
+                    slist[i] = ''
         while stack:
-            s[stack.pop()] = ''
-        return ''.join(s)
-    
-    test = "((f(oo))f)"
-    minRemoveToMakeValid(self, test)
+            slist[stack.pop()] = ''
+        return ''.join(slist)
